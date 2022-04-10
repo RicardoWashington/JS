@@ -1,4 +1,4 @@
-#![Logo of the project](http://logo_link)
+#BANCO DIGITAL
  
 ## Name_of_the_project
  
