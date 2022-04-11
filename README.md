@@ -95,10 +95,10 @@ Basicamente ambos em JavaScript são objetos, os objetos simples não tem "propr
         let y = {};
         let a = new Array;
         let b = new Object; 
-        console.log(x instanceof Array);  
-        console.log(y instanceof Array); 
-        console.log(a instanceof Array); 
-        console.log(b instanceof Array); 
+        console.log(x instanceof Array); //retorna true
+        console.log(y instanceof Array); //retorna false
+        console.log(a instanceof Array); //retorna true
+        console.log(b instanceof Array); //retorna false
     </script>
     <title>Exercicio 4</title>
 </head>
@@ -106,5 +106,5 @@ Basicamente ambos em JavaScript são objetos, os objetos simples não tem "propr
 </body>
 </html>
 ```
-
+Note que [] seria equivalente a que fazer new Array e {} o equivalente a new Object.
 
