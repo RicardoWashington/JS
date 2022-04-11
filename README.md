@@ -64,19 +64,47 @@ Pensando em solucionar o problema do escopo de bloco, a ECMAScript 6 destinou-se
       </body>
       </html>
       
+No código acima, note que será impresso Escopo Bloco, se sequencia Escopo Função e em seguida será apresentado um erro. Isso acontece por conta da variável escopoBloco ser restrita a apenas o bloco de instruções.
 
+* const
+Abreviação de constante, onde o valor informado é fixo, pois o comportamento fundamental de uma constante é que uma vez atribuído um valor a ela, este não pode ser alterado.
  
-## Diferenças entre fuunções e métodos
+## Diferenças entre funções e métodos
  
-Here are the technologies used in this project.
- 
-* Ruby version  x.x.x
-* Rails version x.x.x
-* ...
+| FUNÇÃO                                                                         	| MÉTODO                                                                                                                                                     	|
+|--------------------------------------------------------------------------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Uma função pode ser chamada diretamente por seu nome.                          	| Um método consiste em um código que pode ser chamado pelo nome de seu objeto <br>e seu nome de método usando a notação de ponto ou a notação de colchetes. 	|
+| Uma função pode passar os dados que são operados e pode <br>retornar os dados. 	| O método opera os dados contidos em uma classe.                                                                                                            	|
+| Os dados passados para uma função são explícitos.                              	| Um método passa implicitamente o objeto no qual foi chamado.                                                                                               	|
+| Uma função vive sozinha.                                                       	| Um método é uma função associada a uma propriedade do objeto.                                                                                              	|
  
  
 ## Diferenças entre Arrays e Objetos
- 
-* Github
-* ...
- 
+
+Basicamente ambos em JavaScript são objetos, os objetos simples não tem "propriedades", então existem diversos tipos de objetos que estendem o objeto simples, o Array por si só é um objeto estendido, até mesmo strings são objetos em JavaScript.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        let x = [];
+        let y = {};
+        let a = new Array;
+        let b = new Object; 
+        console.log(x instanceof Array);  
+        console.log(y instanceof Array); 
+        console.log(a instanceof Array); 
+        console.log(b instanceof Array); 
+    </script>
+    <title>Exercicio 4</title>
+</head>
+<body>
+</body>
+</html>
+```
+
+
